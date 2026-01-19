@@ -19,6 +19,10 @@ SERVER_URL = "https://cloud.seatable.io"
 TABLE_NAME = "Works & Exhibits"
 VIEW_NAME = "Produced Works"
 
+# Header images (relative to catalog.html)
+HEADER_LOGO = "page-header-assets/logo.png"
+HEADER_TITLE = "page-header-assets/available-works.png"
+
 # Output paths
 OUTPUT_DIR = Path("art")
 IMAGES_DIR = OUTPUT_DIR / "images"
@@ -146,7 +150,7 @@ def find_image_column(columns):
     return None
 
 
-def generate_html(rows, image_column, columns):
+def generate_html(rows, image_column, columns, header_logo, header_title):
     """Generate HTML catalog page matching existing style"""
     
     # Find specific columns by name
@@ -174,6 +178,27 @@ def generate_html(rows, image_column, columns):
         .container {
             max-width: 1400px;
             margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .header .logo {
+            max-width: 400px;
+        }
+        
+        .header .title {
+            max-width: 600px;
         }
         
         h1 {
@@ -276,7 +301,10 @@ def generate_html(rows, image_column, columns):
 </head>
 <body>
     <div class="container">
-        <h1>Artwork Catalog</h1>
+        <div class="header">
+            <img src="{header_logo}" alt="John Woodruff" class="logo">
+            <img src="{header_title}" alt="Available Works" class="title">
+        </div>
         <div class="grid">
 """
     
@@ -438,7 +466,7 @@ def main():
     
     # Generate HTML
     print(f"\n5. Generating {HTML_FILE}...")
-    html = generate_html(rows, image_column, all_columns)
+    html = generate_html(rows, image_column, all_columns, HEADER_LOGO, HEADER_TITLE)
     HTML_FILE.write_text(html, encoding="utf-8")
     print(f"   ✓ Catalog generated!")
     
