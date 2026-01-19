@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currently Showing - John Woodruff</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .header .logo {
+            max-width: 400px;
+        }
+        
+        .header .title {
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .artwork-card {
+            background: #f9f9f9;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: box-shadow 0.2s;
+        }
+        
+        .artwork-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .artwork-image {
+            width: 100%;
+            height: 300px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .artwork-image img {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .artwork-info {
+            padding: 20px;
+        }
+        
+        .artwork-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        
+        .artwork-meta {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .artwork-meta div {
+            margin-bottom: 4px;
+        }
+        
+        .inv-number {
+            font-family: monospace;
+            color: #999;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+        
+        .price {
+            margin-top: 8px;
+            font-weight: 600;
+            color: #222;
+        }
+        
+        .inquire-btn {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #888;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .inquire-btn:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="page-header-assets/logo.png" alt="John Woodruff" class="logo">
+            <img src="page-header-assets/currently-showing.png" alt="Available Works" class="title">
+        </div>
+        <div class="grid">
+            <div class="artwork-card">
+                <div class="artwork-image">
+                    <img src="images/8200a26f35fc.jpg" alt="Break & Habit, No. 02, Detail 03">
+                </div>
+                <div class="artwork-info">
+                    <div class="artwork-title">Break & Habit, No. 02, Detail 03</div>
+                    <div class="artwork-meta">
+                        <div class="inv-number">BRHA02D03</div>
+                        <div><strong>Series:</strong> Break & Habit</div>
+                        <div><strong>Year:</strong> 2026</div>
+                        <div><strong>Edition:</strong> #1/5</div>
+                        <div><strong>Image:</strong> 18 x 22.5"</div>
+                        <div style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">Archival pigment print mounted on panel, matte UV laminate coating</div>
+                        <div><strong>Medium:</strong> Photography</div>
+                        <div class="price">$450</div>
+                        <a href="mailto:jofowood@gmail.com?subject=Inquiry%3A%20Break%20%26%20Habit%2C%20No.%2002%2C%20Detail%2003%20%28BRHA02D03%29&body=I%27m%20interested%20in%20the%20following%20artwork%3A%0A%0ATitle%3A%20Break%20%26%20Habit%2C%20No.%2002%2C%20Detail%2003%0AInventory%3A%20BRHA02D03%0ASeries%3A%20Break%20%26%20Habit%0AYear%3A%202026%0AEdition%3A%20%231/5%0AImage%20Size%3A%2018%20x%2022.5%22%0A%0ADetails%3A%20Archival%20pigment%20print%20mounted%20on%20panel%2C%20matte%20UV%20laminate%20coating%0AMedium%3A%20Photography%0A%0APrice%3A%20%24450%0A" class="inquire-btn">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="artwork-card">
+                <div class="artwork-image">
+                    <img src="images/8903948a21ee.jpg" alt="Break & Habit, No. 02, Detail 05">
+                </div>
+                <div class="artwork-info">
+                    <div class="artwork-title">Break & Habit, No. 02, Detail 05</div>
+                    <div class="artwork-meta">
+                        <div class="inv-number">BRHA02D05</div>
+                        <div><strong>Series:</strong> Break & Habit</div>
+                        <div><strong>Year:</strong> 2026</div>
+                        <div><strong>Edition:</strong> #1/5</div>
+                        <div><strong>Image:</strong> 18 x 22.5"</div>
+                        <div style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">Archival pigment print mounted on panel, matte UV laminate coating</div>
+                        <div><strong>Medium:</strong> Photography</div>
+                        <div class="price">$450</div>
+                        <a href="mailto:jofowood@gmail.com?subject=Inquiry%3A%20Break%20%26%20Habit%2C%20No.%2002%2C%20Detail%2005%20%28BRHA02D05%29&body=I%27m%20interested%20in%20the%20following%20artwork%3A%0A%0ATitle%3A%20Break%20%26%20Habit%2C%20No.%2002%2C%20Detail%2005%0AInventory%3A%20BRHA02D05%0ASeries%3A%20Break%20%26%20Habit%0AYear%3A%202026%0AEdition%3A%20%231/5%0AImage%20Size%3A%2018%20x%2022.5%22%0A%0ADetails%3A%20Archival%20pigment%20print%20mounted%20on%20panel%2C%20matte%20UV%20laminate%20coating%0AMedium%3A%20Photography%0A%0APrice%3A%20%24450%0A" class="inquire-btn">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="artwork-card">
+                <div class="artwork-image">
+                    <img src="images/55c74e0abcb0.jpg" alt="Habit Pattern, No. 14 (green)">
+                </div>
+                <div class="artwork-info">
+                    <div class="artwork-title">Habit Pattern, No. 14 (green)</div>
+                    <div class="artwork-meta">
+                        <div class="inv-number">HAPA14</div>
+                        <div><strong>Series:</strong> Habit Pattern</div>
+                        <div><strong>Year:</strong> 2025</div>
+                        <div><strong>Edition:</strong> #1/5</div>
+                        <div><strong>Image:</strong> 18.5 x 12"</div>
+                        <div style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">Archival pigment print mounted on panel</div>
+                        <div><strong>Medium:</strong> Photography</div>
+                        <div class="price">$550</div>
+                        <a href="mailto:jofowood@gmail.com?subject=Inquiry%3A%20Habit%20Pattern%2C%20No.%2014%20%28green%29%20%28HAPA14%29&body=I%27m%20interested%20in%20the%20following%20artwork%3A%0A%0ATitle%3A%20Habit%20Pattern%2C%20No.%2014%20%28green%29%0AInventory%3A%20HAPA14%0ASeries%3A%20Habit%20Pattern%0AYear%3A%202025%0AEdition%3A%20%231/5%0AImage%20Size%3A%2018.5%20x%2012%22%0A%0ADetails%3A%20Archival%20pigment%20print%20mounted%20on%20panel%0AMedium%3A%20Photography%0A%0APrice%3A%20%24550%0A" class="inquire-btn">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="artwork-card">
+                <div class="artwork-image">
+                    <img src="images/08e3f4f491f5.jpg" alt="Habit Pattern, No. 15 (green)">
+                </div>
+                <div class="artwork-info">
+                    <div class="artwork-title">Habit Pattern, No. 15 (green)</div>
+                    <div class="artwork-meta">
+                        <div class="inv-number">HAPA15</div>
+                        <div><strong>Series:</strong> Habit Pattern</div>
+                        <div><strong>Year:</strong> 2025</div>
+                        <div><strong>Image:</strong> 18.5 x 12"</div>
+                        <div style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">Archival pigment print mounted on panel</div>
+                        <div><strong>Medium:</strong> Photography</div>
+                        <div class="price">$550</div>
+                        <a href="mailto:jofowood@gmail.com?subject=Inquiry%3A%20Habit%20Pattern%2C%20No.%2015%20%28green%29%20%28HAPA15%29&body=I%27m%20interested%20in%20the%20following%20artwork%3A%0A%0ATitle%3A%20Habit%20Pattern%2C%20No.%2015%20%28green%29%0AInventory%3A%20HAPA15%0ASeries%3A%20Habit%20Pattern%0AYear%3A%202025%0AImage%20Size%3A%2018.5%20x%2012%22%0A%0ADetails%3A%20Archival%20pigment%20print%20mounted%20on%20panel%0AMedium%3A%20Photography%0A%0APrice%3A%20%24550%0A" class="inquire-btn">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
