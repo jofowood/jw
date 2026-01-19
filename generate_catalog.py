@@ -163,70 +163,70 @@ def generate_html(rows, image_column, columns, header_logo, header_title):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artwork Catalog</title>
     <style>
-        * {
+        * {{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }}
         
-        body {
+        body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: #fff;
             padding: 20px;
-        }
+        }}
         
-        .container {
+        .container {{
             max-width: 1400px;
             margin: 0 auto;
-        }
+        }}
         
-        .header {
+        .header {{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
             margin-bottom: 40px;
-        }
+        }}
         
-        .header img {
+        .header img {{
             max-width: 100%;
             height: auto;
-        }
+        }}
         
-        .header .logo {
+        .header .logo {{
             max-width: 400px;
-        }
+        }}
         
-        .header .title {
+        .header .title {{
             max-width: 600px;
-        }
+        }}
         
-        h1 {
+        h1 {{
             font-size: 2rem;
             margin-bottom: 30px;
             font-weight: 300;
             text-align: center;
-        }
+        }}
         
-        .grid {
+        .grid {{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
-        }
+        }}
         
-        .artwork-card {
+        .artwork-card {{
             background: #f9f9f9;
             border-radius: 2px;
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             transition: box-shadow 0.2s;
-        }
+        }}
         
-        .artwork-card:hover {
+        .artwork-card:hover {{
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
+        }}
         
-        .artwork-image {
+        .artwork-image {{
             width: 100%;
             height: 300px;
             background: #f9f9f9;
@@ -234,52 +234,52 @@ def generate_html(rows, image_column, columns, header_logo, header_title):
             align-items: center;
             justify-content: center;
             padding: 20px;
-        }
+        }}
         
-        .artwork-image img {
+        .artwork-image img {{
             max-width: 100%;
             max-height: 300px;
             width: auto;
             height: auto;
             object-fit: contain;
             display: block;
-        }
+        }}
         
-        .artwork-info {
+        .artwork-info {{
             padding: 20px;
-        }
+        }}
         
-        .artwork-title {
+        .artwork-title {{
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 8px;
             color: #222;
-        }
+        }}
         
-        .artwork-meta {
+        .artwork-meta {{
             font-size: 0.9rem;
             color: #666;
             line-height: 1.6;
-        }
+        }}
         
-        .artwork-meta div {
+        .artwork-meta div {{
             margin-bottom: 4px;
-        }
+        }}
         
-        .inv-number {
+        .inv-number {{
             font-family: monospace;
             color: #999;
             font-size: 0.85rem;
             margin-bottom: 8px;
-        }
+        }}
         
-        .price {
+        .price {{
             margin-top: 8px;
             font-weight: 600;
             color: #222;
-        }
+        }}
         
-        .inquire-btn {
+        .inquire-btn {{
             display: block;
             width: 100%;
             margin-top: 15px;
@@ -292,11 +292,11 @@ def generate_html(rows, image_column, columns, header_logo, header_title):
             font-size: 0.9rem;
             font-weight: 500;
             transition: background 0.2s;
-        }
+        }}
         
-        .inquire-btn:hover {
+        .inquire-btn:hover {{
             background: #666;
-        }
+        }}
     </style>
 </head>
 <body>
