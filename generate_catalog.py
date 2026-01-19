@@ -156,7 +156,7 @@ def generate_html(rows, image_column, columns, header_logo, header_title):
     # Find specific columns by name
     column_map = {col['name']: col for col in columns}
     
-    html = """<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
