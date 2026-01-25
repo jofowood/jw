@@ -30,17 +30,17 @@ python3 generate_catalog.py <config_file.json>
 **Examples:**
 ```bash
 # Generate "Available Works" catalog
-python3 generate_catalog.py config_available_works.json
+python3 generate_catalog.py config_produced_works.json
 
 # Generate "Habit Pattern" catalog  
-python3 generate_catalog.py config_habit_pattern.json
+python3 generate_catalog.py config_currently_showing.json
 ```
 
 ### Update All Catalogs
 
 ```bash
-python3 generate_catalog.py config_available_works.json
-python3 generate_catalog.py config_habit_pattern.json
+python3 generate_catalog.py config_produced_works.json
+python3 generate_catalog.py config_currently_showing.json
 git add art/
 git commit -m "Update catalogs"
 git push
@@ -69,20 +69,20 @@ Each catalog needs a JSON config file with these fields:
   "output_file": "art/catalog.html",
   "header_logo": "page-header-assets/logo.png",
   "header_title": "page-header-assets/available-works.png",
-  "page_title": "Available Works - John Woodruff Photography"
+  "page_title": "Available Works - John Woodruff"
 }
 ```
 
-### Example: Habit Pattern Series
+### Example: Currently Showing
 
 **config_habit_pattern.json:**
 ```json
 {
-  "view_name": "Habit Pattern Series",
-  "output_file": "art/habit-pattern.html",
+  "view_name": "Currently Showing",
+  "output_file": "art/currently-showing.html",
   "header_logo": "page-header-assets/logo.png",
-  "header_title": "page-header-assets/habit-pattern-title.png",
-  "page_title": "Habit Pattern - John Woodruff Photography"
+  "header_title": "page-header-assets/currently-showing-title.png",
+  "page_title": "Currently Showing - John Woodruff"
 }
 ```
 
