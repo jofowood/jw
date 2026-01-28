@@ -413,14 +413,16 @@ def generate_html(rows, image_column, columns, header_logo, header_title, page_t
         mailto_link = f"mailto:jofowood@gmail.com?subject={quote(email_subject)}&body={quote(email_body)}"
         
         html += f"""                        <a href="{mailto_link}" class="inquire-btn">Inquire</a>\n"""
-        # Build Google Form purchase info link
-        form_base_url = "https://docs.google.com/forms/d/e/1FAIpQLSeexuq8vTsj5KrOr4trdD1vFrIVnS31sMlGT8sQB_Egc3Idag/viewform"
-        github_base_url = "https://jofowood.github.io/art/art"
-        image_url_full = f"{github_base_url}/images/{image_filename}"
-        
-        purchase_link = f"{form_base_url}?entry.370646706={quote(title)}&entry.673557102={quote(image_url_full)}"
-        
-        html += f"""                        <a href="{purchase_link}" class="inquire-btn" target="_blank">Purchase Info</a>\n"""
+       # Only add Purchase Info button if configured
+if config.get('include_purchase_button', False):
+    # Build Google Form purchase info link
+    form_base_url = "https://docs.google.com/forms/d/e/1FAIpQLSeexuq8vTsj5KrOr4trdD1vFrIVnS31sMlGT8sQB_Egc3Idag/viewform"
+    github_base_url = "https://jofowood.github.io/art/art"
+    image_url_full = f"{github_base_url}/images/{image_filename}"
+    
+    purchase_link = f"{form_base_url}?entry.370646706={quote(title)}&entry.673557102={quote(image_url_full)}"
+    
+    html += f"""                        <a href="{purchase_link}" class="inquire-btn" target="_blank">Purchase Info</a>\n"""
         html += """                    </div>
                 </div>
             </div>
