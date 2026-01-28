@@ -435,7 +435,7 @@ def generate_html(rows, image_column, columns, header_logo, header_title, page_t
     </div>
 </body>
 </html>"""
-    
+
     return html
 
 
