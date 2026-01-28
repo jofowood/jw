@@ -513,7 +513,7 @@ def main():
     
     # Generate HTML
     print(f"\n5. Generating {output_file}...")
-    html = generate_html(rows, image_column, all_columns, header_logo, header_title, page_title)
+    html = generate_html(rows, image_column, all_columns, header_logo, header_title, page_title, config)
     output_file.write_text(html, encoding="utf-8")
     print(f"   ✓ Catalog generated!")
     
