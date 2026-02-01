@@ -357,7 +357,6 @@ def generate_html(rows, image_column, columns, header_logo, header_title, page_t
         # Extract fields using actual column keys from SeaTable
         inventory = row.get('0000', '')  # Inventory number
         title = row.get('gScu', 'Untitled')  # Title
-        series = row.get('z350', '')  # Collection/Series
         year = row.get('4UG7', '')  # Date/Year
         edition = row.get('rXGj', '')  # Current sequence/edition
         image_size = row.get('gWXH', '')  # Image size
@@ -379,8 +378,6 @@ def generate_html(rows, image_column, columns, header_logo, header_title, page_t
         
         if inventory:
             html += f"""                        <div class="inv-number">{inventory}</div>\n"""
-        if series:
-            html += f"""                        <div><strong>Series:</strong> {series}</div>\n"""
         if year:
             html += f"""                        <div><strong>Year:</strong> {year}</div>\n"""
         if edition:
@@ -403,8 +400,6 @@ def generate_html(rows, image_column, columns, header_logo, header_title, page_t
         email_body += f"Title: {title}\n"
         if inventory:
             email_body += f"Inventory: {inventory}\n"
-        if series:
-            email_body += f"Series: {series}\n"
         if year:
             email_body += f"Year: {year}\n"
         if edition:
